@@ -1,3 +1,13 @@
+if ($.cookie('bgcolor') != undefined) {
+    $("body").css('background-color', $.cookie('bgcolor'));
+    $("#game").css('background-color', $.cookie('gmcolor'));
+    $("#object")[0].src = $.cookie('imsrc')
+    $("body").css('color', $.cookie('fncolor'));
+}
+
+
+
+
 // width and height of the game div
 var width = $("#game").width();
 var height = $("#game").height();
